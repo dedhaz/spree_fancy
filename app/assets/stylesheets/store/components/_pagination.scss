@@ -2,7 +2,7 @@
   text-align: center;
 
   .page {
-    @include border-radius(25px);
+    @include border-radius(5px);
     display: inline-block;
     padding: 5px;
     text-align: center;
