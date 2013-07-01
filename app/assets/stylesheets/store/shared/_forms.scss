@@ -4,7 +4,7 @@ input[type="text"], input[type="email"],
 input[type="password"], input[type="tel"],
 input[type="search"], 
 textarea {
-  @include border-radius(20px);
+  @include border-radius(5px);
   @include box-shadow(none);
   @include transition-duration(0.3s);
   border-width: 3px;
@@ -33,7 +33,7 @@ input[type="number"],
 input[type="text"], input[type="email"],
 input[type="password"], input[type="tel"],
 input[type="search"], textarea {
-  @include border-radius(8px);
+  @include border-radius(5px);
   text-transform: none;
   color: $body_text_color;
 
@@ -54,7 +54,7 @@ form {
 }
 
 label.ui-button {
-  @include border-radius(15px);
+  @include border-radius(5px);
   @include transition-duration(0.3s);
   border-width: 2px;
   margin-right: 10px !important;
