@@ -94,7 +94,7 @@
 
 .product-image {
   a {
-    @include border-radius(145px);
+    @include border-radius(10px);
     @include transition-duration(0.3s);
     float: left;
     display: block;
