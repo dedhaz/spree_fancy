@@ -1,42 +1,65 @@
-<% content_for :subheader do %>
-  <%= render 'slider' %>
-<% end %>
-
-<div id="welcome-message">
+<class="twelve columns" data-hook>
   <div class="container">
-    <h1>
-      Welcome to our amazing store!
-      <br>
-      Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere!</a>
-    </h1>
+   <div class="four columns">
+     <img name="page_r2_c1" src="img/page_r2_c1.png" width="243" height="192" id="page_r2_c1" usemap="#m_page_r2_c1" alt="" />
+     <img name="page_r3_c1" src="img/page_r3_c1.png" width="243" height="191" id="page_r3_c1" usemap="#m_page_r3_c1" alt="" />
+   </div>
+
+   <div class="four columns"> 
+     <img name="page_r2_c2" src="img/page_r2_c2.png" width="243" height="192" id="page_r2_c2" usemap="#m_page_r2_c2" alt="" />
+     <img name="page_r3_c2" src="img/page_r3_c2.png" width="243" height="191" id="page_r3_c2" usemap="#m_page_r3_c2" alt="" />
+   </div>
+
+   <div class="four columns">
+     <img name="page_r2_c3" src="img/page_r2_c3.png" width="244" height="192" id="page_r2_c3" usemap="#m_page_r2_c3" alt="" />
+     <img name="page_r3_c3" src="img/page_r3_c3.png" width="244" height="191" id="page_r3_c3" usemap="#m_page_r3_c3" alt="" />
+   </div>
+
+   <div class="four columns">
+     <img name="page_r2_c4" src="img/page_r2_c4.png" width="245" height="192" id="page_r2_c4" usemap="#m_page_r2_c4" alt="" />
+     <img name="page_r3_c4" src="img/page_r3_c4.png" width="245" height="191" id="page_r3_c4" usemap="#m_page_r3_c4" alt="" />
   </div>
-</div>
+ </div>
+ 
+ <div class="container">
+  <div class="two columns">
+     <img name="page_r1_c4" src="img/page_r1_c4.png" width="245" height="256" id="page_r1_c4" usemap="#m_page_r1_c4" alt="" />
+  </div>
+  <div class="two columns offset-by-two">
+     <img name="page_r1_c1" src="img/page_r1_c1.png" width="730" height="256" id="page_r1_c1" usemap="#m_page_r1_c1" alt="" />
+  </div>
+ </div>
 
-<div class="container">
-  <% if @featured_products %>
-    <div id="featured-products" class="row">
-      <h3>Featured Products</h3>
-      <hr>
-      <ul class="carousel">
-        <% @featured_products.each do |product| %>
-          <%= render 'product', :product => product %>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <div class="container container-sixteen">	
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px">Приветствуем Вас в интернет-магазине ITALYKIDS</h1>
+			<h5>Детская одежда из Италии</h5>
+			<hr />
+		</div>
+		<div class="one-third column">
+			<h3>Кто мы?</h3>	
+			<p>Супер-пупер перцы расписные, ываоыфраываывраывфоар вы ывоаывоа выар выаовыоар выарвылораывлора ываыв.</p>
+		</div>
+		<div class="one-third column">
+			<h3>Что Вы сможете у нас приобрести</h3>	
+			<p>Супер пупер одежду от  итальянских дизайнерских фирм</p>
+			<ul class="square">
+				<li><strong>To Be To</li>
+				<li><strong>Gaialuna</li>
+				<li><strong>Bast Band.</li>
+			</ul>
+		</div>
+		<div class="one-third column">
+			<h3>Почему мы лучшие?</h3>	
+			<p>аывпарыв арвыары пваор пвыаовып авыао выар выалор выаовы алоырв ываорыв лоавы авыра овыа оывра выоа овыар выавы</p>
+		</div>
 
-  <% if @latest_products %>
-    <div id="latest-products" class="row">
-      <h3>Latest Products</h3>
-      <hr>
-      <ul class="carousel">
-        <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
-          <%= render 'product', :product => product %>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-</div>
+	</div><!-- container -->
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0014)about:internet -->
@@ -45,73 +68,48 @@
 <title>page.png</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">td img {display: block;}</style>
-<!--Fireworks CS6 Dreamweaver CS6 target.  Created Sat Jun 15 22:31:55 GMT+0400 2013-->
+<!--Fireworks CS6 Dreamweaver CS6 target.  Created Mon Jul 01 23:15:18 GMT+0400 2013-->
 </head>
-<body bgcolor="#ffffff">
-<table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
-<!-- fwtable fwsrc="шаблон страницы.fw.png" fwpage="Страница 1" fwbase="page.png" fwstyle="Dreamweaver" fwdocid = "329135196" fwnested="0" -->
-  <tr>
-   <td><img src="img/spacer.gif" width="254" height="1" alt="" /></td>
-   <td><img src="img/spacer.gif" width="246" height="1" alt="" /></td>
-   <td><img src="img/spacer.gif" width="249" height="1" alt="" /></td>
-   <td><img src="img/spacer.gif" width="251" height="1" alt="" /></td>
-   <td><img src="img/spacer.gif" width="1" height="1" alt="" /></td>
-  </tr>
 
-  <tr>
-   <td colspan="3"><img name="page_r1_c1" src="img/page_r1_c1.png" width="749" height="259" id="page_r1_c1" usemap="#m_page_r1_c1" alt="" /></td>
-   <td><img name="page_r1_c4" src="img/page_r1_c4.png" width="251" height="259" id="page_r1_c4" usemap="#m_page_r1_c4" alt="" /></td>
-   <td><img src="img/spacer.gif" width="1" height="259" alt="" /></td>
-  </tr>
-  <tr>
-   <td><img name="page_r2_c1" src="img/page_r2_c1.png" width="254" height="198" id="page_r2_c1" usemap="#m_page_r2_c1" alt="" /></td>
-   <td><img name="page_r2_c2" src="img/page_r2_c2.png" width="246" height="198" id="page_r2_c2" usemap="#m_page_r2_c2" alt="" /></td>
-   <td><img name="page_r2_c3" src="img/page_r2_c3.png" width="249" height="198" id="page_r2_c3" usemap="#m_page_r2_c3" alt="" /></td>
-   <td><img name="page_r2_c4" src="img/page_r2_c4.png" width="251" height="198" id="page_r2_c4" usemap="#m_page_r2_c4" alt="" /></td>
-   <td><img src="img/spacer.gif" width="1" height="198" alt="" /></td>
-  </tr>
-  <tr>
-   <td><img name="page_r3_c1" src="img/page_r3_c1.png" width="254" height="195" id="page_r3_c1" usemap="#m_page_r3_c1" alt="" /></td>
-   <td><img name="page_r3_c2" src="img/page_r3_c2.png" width="246" height="195" id="page_r3_c2" usemap="#m_page_r3_c2" alt="" /></td>
-   <td><img name="page_r3_c3" src="img/page_r3_c3.png" width="249" height="195" id="page_r3_c3" usemap="#m_page_r3_c3" alt="" /></td>
-   <td><img name="page_r3_c4" src="img/page_r3_c4.png" width="251" height="195" id="page_r3_c4" usemap="#m_page_r3_c4" alt="" /></td>
-   <td><img src="img/spacer.gif" width="1" height="195" alt="" /></td>
-  </tr>
-  <tr>
-   <td colspan="4"><img name="page_r4_c1" src="img/page_r4_c1.png" width="1000" height="10" id="page_r4_c1" alt="" /></td>
-   <td><img src="img/spacer.gif" width="1" height="10" alt="" /></td>
-  </tr>
-</table>
 <map name="m_page_r1_c1" id="m_page_r1_c1">
-<area shape="rect" coords="10,6,744,256" href="javascript:;" alt="" />
+<area shape="rect" coords="0,0,730,256" href="javascript:;" alt="" />
+<area shape="rect" coords="0,0,729,254" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r1_c4" id="m_page_r1_c4">
-<area shape="rect" coords="2,6,242,256" href="http://shop.italykids.ru/t/rasprodazha/novinki" alt="" />
+<area shape="rect" coords="0,0,245,256" href="http://shop.italykids.ru/t/rasprodazha/novinki" alt="" />
+<area shape="rect" coords="1,1,243,253" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r2_c1" id="m_page_r2_c1">
-<area shape="rect" coords="10,8,250,195" href="http://shop.italykids.ru/t/dlia-dievochiek" alt="" />
+<area shape="rect" coords="0,0,243,192" href="http://shop.italykids.ru/t/dlia-dievochiek" alt="" />
+<area shape="rect" coords="0,2,242,190" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r2_c2" id="m_page_r2_c2">
-<area shape="rect" coords="3,8,243,195" href="http://shop.italykids.ru/t/dlia-mal'chikov" alt="" />
+<area shape="rect" coords="0,0,243,192" href="http://shop.italykids.ru/t/dlia-mal'chikov" alt="" />
+<area shape="rect" coords="2,2,242,189" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r2_c3" id="m_page_r2_c3">
-<area shape="rect" coords="4,8,244,195" href="http://shop.italykids.ru/t/2/6-miesiatsiev" alt="" />
+<area shape="rect" coords="0,0,244,192" href="http://shop.italykids.ru/t/2/6-miesiatsiev" alt="" />
+<area shape="rect" coords="1,1,243,190" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r2_c4" id="m_page_r2_c4">
-<area shape="rect" coords="2,8,242,195" href="http://shop.italykids.ru/t/rasprodazha/rasprodazha" alt="" />
+<area shape="rect" coords="0,0,245,192" href="http://shop.italykids.ru/t/rasprodazha/rasprodazha" alt="" />
+<area shape="rect" coords="2,0,244,189" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r3_c1" id="m_page_r3_c1">
-<area shape="rect" coords="10,5,250,192" href="http://shop.italykids.ru/contact" alt="" />
+<area shape="rect" coords="0,0,243,191" href="http://shop.italykids.ru/contact" alt="" />
+<area shape="rect" coords="0,2,242,191" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r3_c2" id="m_page_r3_c2">
-<area shape="rect" coords="3,5,243,192" href="javascript:;" alt="" />
+<area shape="rect" coords="0,0,243,191" href="http://shop.italykids.ru/contact" alt="" />
+<area shape="rect" coords="1,1,243,190" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r3_c3" id="m_page_r3_c3">
-<area shape="rect" coords="4,5,244,192" href="http://shop.italykids.ru/t/dlia-muzhchin" alt="" />
+<area shape="rect" coords="0,0,244,191" href="http://shop.italykids.ru/t/dlia-muzhchin" alt="" />
+<area shape="rect" coords="1,1,243,190" href="javascript:;" alt="" />
 </map>
 <map name="m_page_r3_c4" id="m_page_r3_c4">
-<area shape="rect" coords="2,5,242,192" href="http://shop.italykids.ru/t/dlia-zhienshchin" alt="" />
+<area shape="rect" coords="0,0,245,191" href="http://shop.italykids.ru/t/dlia-zhienshchin" alt="" />
+<area shape="rect" coords="2,0,244,189" href="javascript:;" alt="" />
 </map>
 </body>
 </html>
-
