@@ -1,12 +1,12 @@
 #subheader {
   @include single-box-shadow(darken($c_blue, 1), 0, 0, 0px, 0, true);
   // background: image-url('store/subheader-bg.png') repeat center;
-  background-color: lighten($c_green, 30);
+  background-color: lighten($c_green, 100);
   color: white;
   overflow: hidden;
 
   .subheader-wrapper {
-    padding: 20px 10px;
+    padding: 0px 0px;
     color: white;
     overflow: hidden;
 
